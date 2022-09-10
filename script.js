@@ -1,7 +1,9 @@
+//  *** create a player object ***
 let player = {
     name: "Zishan",
     chips: 169
 }
+
 let cards = [];
 let sum = 0;
 let isAlive = false;
@@ -15,6 +17,8 @@ let playerEl = document.getElementById("player-el");
 
 playerEl.textContent = player.name + ": $" + player.chips;
 
+
+//  *** generating random number ***
 function getRandomCard() {
     let randomNum = Math.floor(Math.random() * 13) + 1;
     if (randomNum > 10) {
@@ -26,6 +30,7 @@ function getRandomCard() {
     }
 }
 
+//  *** started the game ***
 function startGame() {
     isAlive = true
     let firstCard = getRandomCard()
@@ -38,6 +43,7 @@ function startGame() {
     renderGame()
 }
 
+//  *** declare the logic of this game  ***
 function renderGame() {
     cardEl.textContent = "Cards: ";
     for (let i = 0; i < cards.length; i++) {
@@ -57,6 +63,7 @@ function renderGame() {
     messageEl.textContent = message;
 };
 
+//  *** added the new card ***
 function newCard() {
     if (hasBlackJack === false && isAlive === true) {
         let card = getRandomCard();
@@ -66,6 +73,7 @@ function newCard() {
     }
 };
 
+//  *** refresh the page *** 
 function playAgain() {
     window.location.reload();
 }

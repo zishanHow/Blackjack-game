@@ -38,6 +38,7 @@ button {
     margin: 3px 0px;
 }
 
+/*   *** Center the button one after another ***   */
 #btn {
     display: flex;
     flex-direction: column;
