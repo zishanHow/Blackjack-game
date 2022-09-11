@@ -1,6 +1,6 @@
 # Blackjack-game
 
-Game Link: 
+Game Link: https://wonderful-monstera-562e30.netlify.app
 
 Hi, my name is Zishan. It's a poker Blackjack Game I built at scrimba. 
 
@@ -8,6 +8,8 @@ The game has been modified a bit, and a PLAY AGAIN button has been added, which 
 When the button was clicked, the array should be cleared of all items. But I couldn't figure out how to do it, so I made it refresh the page, which works for now.
 
     *** I would greatly appreciate it if you could tell me HOW TO clear the array. ***
+
+    Once you get blackjack, you'll notice that. In the next matches on, the NEW CARD button won't work. So you have to refresh the page.
 
 thank you for reading😊😍
  
